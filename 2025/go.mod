@@ -1,1 +1,0 @@
-module AdventOfCode/2025

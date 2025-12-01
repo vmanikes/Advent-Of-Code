@@ -1,7 +1,7 @@
 package main
 
 import (
-	"AdventOfCode/2025/helpers"
+	"AdventOfCode/helpers"
 	"bufio"
 	"container/ring"
 	"fmt"
