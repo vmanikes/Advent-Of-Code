@@ -4,11 +4,9 @@ import (
 	"AdventOfCode/helpers"
 	"fmt"
 	"io"
-	"os"
 )
 
 func main() {
-	fmt.Println(os.Getwd())
 	file, err := helpers.GetFile("2015/03/input.txt")
 	if err != nil {
 		panic(err)
