@@ -65,6 +65,8 @@ func partOne(ranges []string, ingredients []string) int {
 		return intervals[i].Start < intervals[j].Start
 	})
 
+	fmt.Println("sorted intervals: ", intervals)
+
 	// ---- Step 3: merge ----
 	merged := []Interval{intervals[0]}
 	for i := 1; i < len(intervals); i++ {
@@ -79,6 +81,8 @@ func partOne(ranges []string, ingredients []string) int {
 			merged = append(merged, curr)
 		}
 	}
+
+	fmt.Println("merged: ", merged)
 
 	// ---- Step 4: Binary search for each ingredient ----
 	fresh := 0
